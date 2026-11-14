@@ -48,8 +48,12 @@
   <ItemGroup>
     <Compile Include="Banco.cs" />
     <Compile Include="BancoStore.cs" />
-    <Compile Include="AdministrarBancosForm.cs" />
-    <Compile Include="ComparacionForm.cs" />
+    <Compile Include="AdministrarBancosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComparacionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

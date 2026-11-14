@@ -40,7 +40,12 @@ namespace AnalisisDatos
 
     public static class CalculadoraInversiones
     {
-        public const decimal CapitalInicial = 850000m;
+        private static decimal _capitalInicial = 850000m;
+        public static decimal CapitalInicial
+        {
+            get { return _capitalInicial; }
+            set { _capitalInicial = value; }
+        }
 
         public static ResultadoInversion Calcular(Banco banco, ModalidadInversion modalidad)
         {
